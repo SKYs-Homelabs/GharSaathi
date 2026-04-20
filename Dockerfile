@@ -16,7 +16,7 @@ RUN go mod tidy && \
     CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o /app/gharsaathi .
 
 # Stage 3: Final slim image
-FROM alpine:3.20 AS final
+FROM alpine:3.23 AS final
 RUN apk add --no-cache tini ca-certificates tzdata
 WORKDIR /app
 
