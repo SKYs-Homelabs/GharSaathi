@@ -40,7 +40,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
-            day: monday
+      day: monday
     labels:
       - dependencies
       - github
