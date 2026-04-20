@@ -1,0 +1,20 @@
+services:
+  gharsaathi:
+    build: .
+    image: gharsaathi:latest
+    container_name: gharsaathi
+    restart: unless-stopped
+    ports:
+      - "36727:3000"
+    volumes:
+      - gharsaathi_data:/app/data
+    environment:
+      - PORT=3000
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN:-7d}
+      - DB_PATH=/app/data/gharsaathi.db
+      - PUBLIC_DIR=/app/public
+
+volumes:
+  gharsaathi_data:
+    driver: local

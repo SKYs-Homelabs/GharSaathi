@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /client
+    schedule:
+      interval: weekly
+      day: monday
+    labels:
+      - dependencies
+      - frontend
+    groups:
+      react-ecosystem:
+        patterns:
+          - "react*"
+          - "@types/react*"
+      vite-ecosystem:
+        patterns:
+          - "vite*"
+          - "@vitejs/*"
+
+  - package-ecosystem: gomod
+    directory: /backend
+    schedule:
+      interval: weekly
+      day: monday
+    labels:
+      - dependencies
+      - backend
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    labels:
+      - dependencies
+      - docker
+
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+            day: monday
+    labels:
+      - dependencies
+      - github

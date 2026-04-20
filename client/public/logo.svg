@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Icon -->
+  <rect width="56" height="56" x="4" y="4" rx="12" ry="12" fill="url(#grad)"/>
+  <text x="32" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+        fill="white" text-anchor="middle" letter-spacing="-1">GS</text>
+  <!-- App name -->
+  <text x="74" y="34" font-family="Arial, sans-serif" font-size="22" font-weight="bold"
+        fill="url(#textGrad)">GharSaathi</text>
+  <!-- Tagline -->
+  <text x="74" y="52" font-family="Arial, sans-serif" font-size="11"
+        fill="#6b7280">Home Staff Management</text>
+</svg>
