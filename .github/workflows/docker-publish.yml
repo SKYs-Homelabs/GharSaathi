@@ -103,7 +103,7 @@ jobs:
 
       # ── Anchore / Grype ────────────────────────────────────────────────
       - name: Anchore (Grype) scan
-        uses: anchore/scan-action@v6
+        uses: anchore/scan-action@v7
         id: anchore
         with:
           image: gharsaathi:scan
